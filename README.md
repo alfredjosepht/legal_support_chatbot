@@ -1,4 +1,5 @@
 NLP-Based Legal Support Chatbot for Students (Indian Law)
+
 📌 Overview
 
 Students often face issues such as harassment, discrimination, ragging, cyber abuse, threats, or physical violence, but lack clarity about:
@@ -22,6 +23,7 @@ Provides primary procedural guidance
 Includes a secure login system
 
 Offers a web-based interface using Streamlit
+
 
 ⚠️ Disclaimer
 This system provides legal information and procedural guidance only.
