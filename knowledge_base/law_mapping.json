@@ -1,0 +1,174 @@
+{
+  "physical_violence": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "319": "Hurt",
+        "323": "Voluntarily causing hurt",
+        "324": "Hurt by dangerous weapons",
+        "325": "Grievous hurt",
+        "341": "Wrongful restraint"
+      }
+    }
+  ],
+
+  "sexual_offence": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "354": "Assault or criminal force to outrage modesty",
+        "354A": "Sexual harassment",
+        "354B": "Assault with intent to disrobe",
+        "354D": "Stalking",
+        "375": "Rape"
+      }
+    }
+  ],
+
+  "child_sexual_offence": [
+    {
+      "law": "POCSO Act, 2012",
+      "sections": {
+        "7": "Sexual assault",
+        "8": "Punishment for sexual assault",
+        "9": "Aggravated sexual assault",
+        "11": "Sexual harassment of a child",
+        "12": "Punishment for sexual harassment"
+      }
+    }
+  ],
+
+  "threat_intimidation": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "503": "Criminal intimidation",
+        "506": "Punishment for criminal intimidation",
+        "507": "Criminal intimidation by anonymous communication"
+      }
+    }
+  ],
+
+  "ragging": [
+    {
+      "law": "UGC Anti-Ragging Regulations",
+      "sections": {
+        "Prohibition": "Ragging is prohibited in educational institutions"
+      }
+    },
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "323": "Voluntarily causing hurt",
+        "506": "Criminal intimidation"
+      }
+    }
+  ],
+
+  "cyber_crime": [
+    {
+      "law": "Information Technology Act, 2000",
+      "sections": {
+        "66C": "Identity theft",
+        "66D": "Cheating by personation",
+        "66E": "Violation of privacy",
+        "67": "Publishing obscene content"
+      }
+    },
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "354D": "Cyber stalking",
+        "499": "Defamation"
+      }
+    }
+  ],
+
+  "discrimination_hate": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "153A": "Promoting enmity between groups",
+        "295A": "Deliberate and malicious acts intended to outrage religious feelings",
+        "504": "Intentional insult with intent to provoke breach of peace",
+        "509": "Word, gesture or act intended to insult modesty"
+      }
+    },
+    {
+      "law": "SC/ST (Prevention of Atrocities) Act",
+      "sections": {
+        "3(1)(r)": "Intentional insult or intimidation with intent to humiliate in public view",
+        "3(1)(s)": "Abuse by caste name in public view"
+      }
+    }
+  ],
+
+  "institutional_misconduct": [
+    {
+      "law": "UGC Regulations",
+      "sections": {
+        "Student Rights": "Institutions cannot withhold certificates or documents"
+      }
+    }
+  ],
+
+  "stalking": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "354D": "Stalking"
+      }
+    }
+  ],
+
+  "financial_exploitation": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "383": "Extortion",
+        "384": "Punishment for extortion"
+      }
+    }
+  ],
+
+  "defamation": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "499": "Defamation",
+        "500": "Punishment for defamation"
+      }
+    }
+  ],
+
+  "kidnapping_confinement": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "340": "Wrongful confinement",
+        "342": "Punishment for wrongful confinement",
+        "359": "Kidnapping"
+      }
+    }
+  ],
+
+  "substance_abuse": [
+    {
+      "law": "NDPS Act",
+      "sections": {
+        "20": "Offences relating to cannabis",
+        "22": "Offences relating to psychotropic substances"
+      }
+    }
+  ],
+
+  "mental_harassment": [
+    {
+      "law": "Indian Penal Code",
+      "sections": {
+        "504": "Intentional insult",
+        "506": "Criminal intimidation"
+      }
+    }
+  ]
+}
