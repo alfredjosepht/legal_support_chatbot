@@ -1,5 +1,4 @@
 NLP-Based Legal Support Chatbot for Students (Indian Law)
-
 📌 Overview
 
 Students often face issues such as harassment, discrimination, ragging, cyber abuse, threats, or physical violence, but lack clarity about:
@@ -23,7 +22,6 @@ Provides primary procedural guidance
 Includes a secure login system
 
 Offers a web-based interface using Streamlit
-
 
 ⚠️ Disclaimer
 This system provides legal information and procedural guidance only.
@@ -114,8 +112,8 @@ Git & GitHub
 
 ⚙️ Installation & Setup (Linux / Fedora)
 1. Clone the Repository
-git clone https://github.com/<your-username>/legal-support-chatbot.git
-cd legal-support-chatbot
+git clone https://github.com/<your-username>/legal_support_chatbot.git
+cd legal_support_chatbot
 
 2. Create and Activate Virtual Environment
 python3 -m venv venv
