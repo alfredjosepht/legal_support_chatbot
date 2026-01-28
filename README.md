@@ -4,9 +4,9 @@
 
 Students often face issues such as **harassment, discrimination, ragging, cyber abuse, threats, or physical violence**, but lack clarity about:
 
-- Which **Indian laws** apply
-- Whether **special laws like POCSO** are involved
-- What **initial procedural steps** (e.g., FIR filing) are generally followed
+- Which **Indian laws** apply  
+- Whether **special laws like POCSO** are involved  
+- What **initial procedural steps** (e.g., FIR filing) are generally followed  
 
 This project implements an **NLP-based legal support chatbot** that:
 
@@ -47,42 +47,44 @@ This project implements an **NLP-based legal support chatbot** that:
 legal_support_chatbot/
 │
 ├── app/
-│   ├── main.py              # CLI entry point
-│   ├── cli.py               # Command-line interface
-│   └── web.py               # Streamlit frontend
+│   ├── main.py                  # CLI entry point
+│   ├── cli.py                   # Command-line interface
+│   └── web.py                   # Streamlit web frontend
 │
 ├── nlp/
-│   ├── preprocessing.py
-│   ├── entity_extractor.py
-│   ├── classifier.py
-│   ├── train_classifier.py
-│   ├── domain_model.pkl
-│   └── vectorizer.pkl
+│   ├── preprocessing.py         # Text cleaning (spaCy)
+│   ├── entity_extractor.py      # Age, caste, medium extraction
+│   ├── classifier.py            # ML-based issue classification
+│   ├── train_classifier.py      # Model training script
+│   ├── domain_model.pkl         # Trained ML model
+│   └── vectorizer.pkl           # TF-IDF vectorizer
 │
 ├── rules/
-│   ├── rule_engine.py
-│   ├── age_rules.py
-│   ├── discrimination_rules.py
-│   └── institutional_rules.py
+│   ├── rule_engine.py           # Central legal reasoning engine
+│   ├── age_rules.py             # Minor/POCSO rules
+│   ├── discrimination_rules.py  # Caste/race discrimination rules
+│   └── institutional_rules.py   # College/institutional misconduct
 │
 ├── knowledge_base/
-│   └── law_mapping.json
+│   └── law_mapping.json         # Indian law & section mapping
 │
 ├── response/
-│   └── generator.py
+│   └── generator.py             # Final response generation
 │
 ├── utils/
-│   ├── auth_db.py
-│   ├── law_loader.py
-│   └── helpers.py
+│   ├── auth_db.py               # Login & authentication (SQLite)
+│   ├── law_loader.py            # Loads law mappings
+│   └── helpers.py               # Utility helpers
 │
 ├── data/
 │   └── training/
-│       └── domain_dataset.csv
+│       └── domain_dataset.csv   # Training dataset
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── requirements.txt             # Python dependencies
+├── README.md                    # Project documentation
+└── .gitignore                   # Git ignore rules
+```
+
 ## 🧰 Technology Stack
 
 - **Python 3.10+**
@@ -92,7 +94,6 @@ legal_support_chatbot/
 - **SQLite** – Authentication Database
 - **Git & GitHub**
 
----
 
 ## ⚙️ Installation & Setup (Linux / Fedora)
 
@@ -101,23 +102,27 @@ legal_support_chatbot/
 ```bash
 git clone https://github.com/<your-username>/legal-support-chatbot.git
 cd legal-support-chatbot
+```
 ### 2️⃣ Create and Activate Virtual Environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 ### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 Install spaCy language model:
-
+```
 ```bash
 python -m spacy download en_core_web_sm
+```
 ## 🧠 Train the ML Model (First Time Only)
 
 ```bash
 python -m nlp.train_classifier
+```
 This generates:
 
 - `nlp/domain_model.pkl`
@@ -131,14 +136,17 @@ This generates:
 
 ```bash
 streamlit run app/web.py
+```
 Open in browser:
 
 ```text
 http://localhost:8501
+```
 ### 🖥️ Command Line Interface (Optional)
 
 ```bash
 python -m app.main
+```
 ## 🔐 Login System
 
 - Users must **register before login**
@@ -150,6 +158,7 @@ Database file:
 
 ```text
 data/users.db
+```
 > This file is excluded from GitHub using `.gitignore`.
 
 ---
@@ -162,4 +171,3 @@ my senior punched me
 i am 16 and teacher touched me
 someone created fake account using my photo
 college is holding my certificates
-
