@@ -100,8 +100,8 @@ legal_support_chatbot/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/legal-support-chatbot.git
-cd legal-support-chatbot
+git clone https://github.com/<your-username>/legal_support_chatbot.git
+cd legal_support_chatbot
 ```
 ### 2️⃣ Create and Activate Virtual Environment
 
