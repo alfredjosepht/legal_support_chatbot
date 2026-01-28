@@ -1,61 +1,49 @@
-NLP-Based Legal Support Chatbot for Students (Indian Law)
-📌 Overview
+# NLP-Based Legal Support Chatbot for Students (Indian Law)
 
-Students often face issues such as harassment, discrimination, ragging, cyber abuse, threats, or physical violence, but lack clarity about:
+## 📌 Overview
 
-Which Indian laws apply
+Students often face issues such as **harassment, discrimination, ragging, cyber abuse, threats, or physical violence**, but lack clarity about:
 
-Whether special laws like POCSO are involved
+- Which **Indian laws** apply
+- Whether **special laws like POCSO** are involved
+- What **initial procedural steps** (e.g., FIR filing) are generally followed
 
-What initial procedural steps (e.g., FIR filing) are generally followed
+This project implements an **NLP-based legal support chatbot** that:
 
-This project implements an NLP-based legal support chatbot that:
+- Understands student problems written in **natural or broken English**
+- Identifies the **probable category of offence**
+- Maps the issue to **relevant Indian laws and sections**
+- Provides **primary procedural guidance**
+- Includes a **secure login system**
+- Offers a **web-based interface using Streamlit**
 
-Understands student problems written in natural or broken English
+> ⚠️ **Disclaimer**  
+> This system provides **legal information and procedural guidance only**.  
+> It does **not** provide legal advice, legal opinions, or determine guilt or outcomes.
 
-Identifies the probable category of offence
+---
 
-Maps the issue to relevant Indian laws and sections
+## ✨ Features
 
-Provides primary procedural guidance
+- Natural Language Processing using **spaCy**
+- Machine Learning–based issue classification
+- Rule-based legal reasoning (POCSO, discrimination, etc.)
+- Indian law mapping:
+  - Indian Penal Code (IPC)
+  - POCSO Act
+  - Information Technology Act
+  - SC/ST (Prevention of Atrocities) Act
+  - UGC Regulations
+- Automatic **POCSO detection** based on age
+- Secure **login & registration system**
+- Web interface built with **Streamlit**
+- Modular and extensible architecture
 
-Includes a secure login system
+---
 
-Offers a web-based interface using Streamlit
+## 🏗️ Project Structure
 
-⚠️ Disclaimer
-This system provides legal information and procedural guidance only.
-It does not provide legal advice, legal opinions, or determine guilt or outcomes.
-
-✨ Features
-
-Natural Language Processing using spaCy
-
-Machine Learning–based issue classification
-
-Rule-based legal reasoning (POCSO, discrimination, etc.)
-
-Indian law mapping:
-
-IPC
-
-POCSO Act
-
-IT Act
-
-SC/ST (Prevention of Atrocities) Act
-
-UGC Regulations
-
-Automatic POCSO detection based on age
-
-Secure login & registration system
-
-Web interface built with Streamlit
-
-Modular and extensible architecture
-
-🏗️ Project Structure
+```text
 legal_support_chatbot/
 │
 ├── app/
@@ -95,154 +83,83 @@ legal_support_chatbot/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+## 🧰 Technology Stack
 
-🧰 Technology Stack
+- **Python 3.10+**
+- **spaCy** – Natural Language Processing
+- **scikit-learn** – Machine Learning
+- **Streamlit** – Web Interface
+- **SQLite** – Authentication Database
+- **Git & GitHub**
 
-Python 3.10+
+---
 
-spaCy – NLP
+## ⚙️ Installation & Setup (Linux / Fedora)
 
-scikit-learn – Machine Learning
+### 1️⃣ Clone the Repository
 
-Streamlit – Web UI
+```bash
+git clone https://github.com/<your-username>/legal-support-chatbot.git
+cd legal-support-chatbot
+### 2️⃣ Create and Activate Virtual Environment
 
-SQLite – Authentication database
-
-Git & GitHub
-
-⚙️ Installation & Setup (Linux / Fedora)
-1. Clone the Repository
-git clone https://github.com/<your-username>/legal_support_chatbot.git
-cd legal_support_chatbot
-
-2. Create and Activate Virtual Environment
+```bash
 python3 -m venv venv
 source venv/bin/activate
+### 3️⃣ Install Dependencies
 
-3. Install Dependencies
+```bash
 pip install -r requirements.txt
-
-
 Install spaCy language model:
 
+```bash
 python -m spacy download en_core_web_sm
+## 🧠 Train the ML Model (First Time Only)
 
-🧠 Train the ML Model (First Time Only)
+```bash
 python -m nlp.train_classifier
-
-
 This generates:
 
-nlp/domain_model.pkl
+- `nlp/domain_model.pkl`
+- `nlp/vectorizer.pkl`
 
-nlp/vectorizer.pkl
+---
 
-▶️ Running the Application
-Web Interface (Recommended)
+## ▶️ Running the Application
+
+### 🌐 Web Interface (Recommended)
+
+```bash
 streamlit run app/web.py
-
-
 Open in browser:
 
+```text
 http://localhost:8501
+### 🖥️ Command Line Interface (Optional)
 
-Command Line Interface (Optional)
+```bash
 python -m app.main
+## 🔐 Login System
 
-🔐 Login System
-
-Users must register before login
-
-Credentials are stored in SQLite
-
-Passwords are securely hashed
-
-Chatbot access is allowed only after authentication
+- Users must **register before login**
+- Credentials are stored in **SQLite**
+- Passwords are **securely hashed**
+- Chatbot access is allowed **only after authentication**
 
 Database file:
 
+```text
 data/users.db
+> This file is excluded from GitHub using `.gitignore`.
 
+---
 
-This file is excluded from GitHub using .gitignore.
+## 🧪 Sample Inputs
 
-🧪 Sample Inputs
+```text
 my friends teased me about my caste
 my senior punched me
 i am 16 and teacher touched me
 someone created fake account using my photo
 college is holding my certificates
 
-⚖️ Legal Scope Covered
-
-Physical violence
-
-Sexual offences
-
-Child sexual offences (POCSO)
-
-Ragging
-
-Cyber crimes
-
-Caste and racial discrimination
-
-Threats and intimidation
-
-Institutional misconduct
-
-Mental harassment
-
-🛡️ Ethics & Limitations
-
-Does not predict legal outcomes
-
-Does not provide personalized legal advice
-
-Uses neutral and informational language
-
-Final applicability of laws is decided by authorities
-
-Designed as a decision-support system
-
-🚀 Future Enhancements
-
-Location-based police station suggestions
-
-FIR portal integration
-
-Severity scoring
-
-User-specific chat history
-
-PDF report generation
-
-Cloud deployment
-
-🎓 Academic Use
-
-This project is suitable for:
-
-Final-year engineering projects
-
-NLP / AI / ML coursework
-
-Legal informatics demonstrations
-
-Social-impact technology showcases
-
-📜 License
-
-This project is intended for educational and academic use only.
-
-If you want next, I can help you with:
-
-📄 Final project report
-
-🎤 Viva explanation
-
-🖼️ Screenshots & demo guide
-
-☁️ Deployment steps
-
-Just tell me what you need next.
